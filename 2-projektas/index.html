@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 projektas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Poppins-Bold&display=swap')">
+    <link rel="stylesheet" href="@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css')">
+  
+  <style>
+
+        body {
+          font-family: 'Poppins', sans-serif;
+          font-family: 'Didact Gothic', sans-serif;
+          color:#333;
+          box-sizing: border-box;
+          max-width:1868px;
+          margin-left: 10%;
+          margin-right: 10%;
+          
+        }
+        
+        .topnav {
+          font-weight: 900px;
+          text-transform: uppercase;
+          padding-top: 40px; 
+          padding-left: 35px;
+          font-size: 17px;
+          padding-bottom: 20px;
+          /* border-bottom: 1px solid rgb(71, 35, 35); */
+        }
+        
+        .topnav a {
+          float: left;
+          /* display: block; */
+          color: black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 14px;
+          letter-spacing: 0px;
+          
+         } /*navbaro pagrindinis tekstas virsuje, 6 zodziai/nuorodos  */
+        
+        .topnav a:hover {
+          color: black;
+          border-bottom: 3px solid rgb(20, 135, 173);
+        }
+      
+        
+        /* .topnav .search-container {
+          float: right;
+        } */
+        
+        /* .topnav input[type=text] {
+          padding: 6px;
+          margin-top: 8px;
+          font-size: 17px;
+          border: none;
+        } */
+        
+        .topnav .search-container button {
+          float: right;
+          padding: 12px 16px;
+          /* margin-top: 8px; */
+          /* margin-right: 16px; */
+          background: #446CCD;
+          font-size: 15px;
+          border: none;
+          cursor: pointer;
+          
+         
+         }/* mygtukas, esantis navbare, paieskos mygtukas */
+        
+        .topnav .search-container button:hover {
+          background: rgb(20, 135, 173);
+        }
+        
+        
+        
+        .btn {
+          background-color: #446CCD;
+          border: none;
+          color: white;
+          /* unicode-bidi: f002;  */
+          padding: 12px 16px;
+          font-size: 16px;
+          cursor: pointer;
+          display: block;
+          margin: 0; 
+        }
+
+        .text {
+            display: block;
+            margin-top: 5em;
+            /* margin-left: 20%; */
+            margin-right: 30%;
+            width: auto;
+            height: auto;
+            padding-top: 30px;
+         }/* tekstas po navbaru iskarto    */
+        
+
+        .search-container {
+           display: block;
+        } /* po tekstu esantis search langas  */
+
+        .search-container1 {
+           display: block;
+           /* margin-top: 5em; */
+            margin-left: 20%;
+            margin-right: 20%;
+            width: auto;
+            height: auto;
+            padding: 30px;
+           /* margin-top: 0 auto;
+           margin-left: 40% */
+        } 
+
+        .fa-search {
+          color: white;
+        }
+
+        .lang-menu {
+          float: right;
+          display: flex;
+          border: none;
+          font-size: 17px;
+          cursor: pointer;
+          margin: 0 auto;
+          padding-inline: 0;
+         
+      
+        }
+
+        ul {
+          margin: 0;
+          padding: 0;
+          font-size: 17px;
+        } /* ul yra tarsi apvalkalas mygtukams. Kolkas tai tik mygtukai, taciau reiks ismokti kaip padaryti, kad jie veiktu. */
+
+       li {
+         display: inline-block;
+       } 
+
+        /* .fa fa-search {
+          color: wheat;
+        } */
+
+
+        h2 {
+          font-size: 76px;
+          margin-bottom: 0;
+        }
+
+        p {
+          font-size: 19px;
+        }
+
+
+         footer {  
+          float: right;
+          display: flex;
+          
+          font-size: 17px;
+          cursor: pointer;
+          margin: 0 auto;
+         }
+        
+         .basr-social-share social {
+           display:flex;
+           padding: 20px;
+           margin: 0;
+           padding: 0;
+         }
+
+         .fa-linkedin, .fa-facebook {
+           padding: 15px;
+           color: black;
+         }
+       
+        @media screen and (max-width: 600px) {
+          .topnav .search-container {
+            float: none;
+          }
+          .topnav a, .topnav input[type=text], .topnav .search-container button, .lang-menu {
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+          }
+        }
+  </style>
+</head>
+<body>
+    <div class="topnav">
+      <ul>
+        <li><a class="active" href="#services">Services</a></li>
+        <li><a href="#about_us">About us</a></li>
+        <li><a href="#our_team">Our team</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>    
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+  
+      <div class="lang-menu">
+          <ul>
+            <a href="" class="ru">RU</a>
+            <a href="" class="en">EN</a>
+          </ul> 
+      </div>
+    </div>
+
+    <div class="text">
+        <h2>404 Error</h2>
+        <p>The page you were looking for couldn't be found. The page could be removed or you misspelled the word while searching for it. Maybe try a search?</p>
+      </div>
+    <div class="search-container1">
+        <form action="/action_page.php">
+            <input type="text" placeholder="Search." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form> 
+            <button class="btn"> Back to Home</button>
+    </div>
+    <hr>  
+  <footer>
+    <div class="basr-social-share social"> 
+      <a class="linkedin" href="">
+        <i class="fa fa-linkedin"></i>
+        <!-- <span>Linkedin</span> -->
+        </a>
+      </div>
+      <div>
+        <a class="facebook" href="">
+        <i class="fa fa-facebook"></i>
+          <!-- <span>Facebook</span> -->
+        </a>
+    </div>
+  </footer>
+</body>

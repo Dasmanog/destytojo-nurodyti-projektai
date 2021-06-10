@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 PROJEKTAS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Poppins-Bold&display=swap')">
+    <link rel="stylesheet" href="@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css')">
+</head>
+<style>
+    * {
+      margin: 0;  
+    }
+
+    html {
+        font-size: 16px;   
+        margin: 0;
+    }
+
+   body {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        letter-spacing: 0px;
+        max-width:1920px;
+        background-color:cornsilk;
+        margin:0 auto;/*  kad elementas butu per viduri.  */ 
+   } 
+
+   .container {
+       background-color: white;
+       margin: 0;
+   } 
+
+    ul {
+        list-style-type: none;
+        padding: 25px;
+        margin: 20px;
+        overflow: hidden;
+    }
+
+    ul.wrapper {
+        padding-left: 300px;
+        /* justify-content: center; */
+    }
+
+    li {
+        float: left;
+        display: inline;
+        font-size: 17px;
+        font-weight: 900;
+        padding-right: 30px;
+    }
+
+    /* navigation baras, kad uzvedus ant jo uzdetu apatini borderi */
+    .topnav a:hover {
+        padding-bottom: 7px;
+          color: rgb(0, 0, 0);
+          border-bottom: 4px solid rgb(20, 135, 173);
+        }
+
+    a {
+        color: #060606;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    div.search-container {
+       float: right;
+       
+    }
+   
+   button {
+        background-color: #446CCD;
+        color: white;
+        cursor: pointer;
+        padding: 12px  15px;
+        
+    }
+
+
+    div.text {
+        margin: 0;
+        max-width: 50%;
+    }
+
+    p {
+        padding: 6.25rem;
+        font-size: 1.1875rem;
+    }
+
+    p.error {
+        font-size: 76px;
+        padding: auto;
+        padding-left: 0;
+        padding-bottom: 12px;
+    }
+
+    p.info {
+        font-size: 19px;
+        padding: 0;
+        text-align: left;
+        font-weight: normal;
+    }
+
+   
+
+    div.language {
+        float: right;
+    }
+
+    .row {
+        border: 1px solid rgb(161, 142, 93)
+    }
+
+    .wrapper {
+        padding-left: 6.875rem;
+        padding-right: 6.875rem;
+    }
+
+    div.row {
+        padding: 25px;
+        /* margin: 20px; */
+            
+    }
+
+    .btn {
+    background-color: #446CCD;
+    border: none;
+    color: white;
+    padding: 18px 38px;
+    font-size: 15px;
+    cursor: pointer;
+    display: block;
+    margin: 0; 
+    }
+
+    form.search-container1 input {
+    padding: 12px;
+    font-size: 20px;
+    float: left;
+    /* width: 50%; */
+    background: #F8F8F8;
+    border: none;
+    margin: 0;
+    }
+
+    form.search-container1 button {
+    float: left;
+    /* width: 8%; */
+    padding: 14px;
+    background: #F8F8F8;
+    color: black;
+    font-size: 17px;
+    border: 1px solid #F8F8F8;
+    /* border: none; */
+    cursor: pointer;
+    }
+
+    form.search-container1 button:hover {
+    background: #446dcd88;
+    }
+
+    form.search-container1::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+
+/* nuorodos, esancios apacioje, footer dalyje */
+    .bar-social-share.social{
+        float: right;
+        padding-right: 100px;
+    }
+
+    i.fa-linkedin {
+        padding-right: 30px;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <ul class="wrapper">
+                <div class="topnav">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about_us">About us</a></li>
+                <li><a href="#our_team">Our team</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                </div>
+                    <div class="search-container"><button type="submit"><i class="fa fa-search"></i></button></div>
+            
+                <div class="language">
+                    <li onclick="toggleLanguage('English')"><a href="#">EN</a></li>
+                    <li onclick="toggleLanguage('Russian')"><a href="#">RU</a></li>
+                </div>
+            </ul>
+
+        </div>
+        
+        <div class="wrapper"> 
+            <div class="row">
+                <div class="text">
+                    <p class="error">404 Error</p>
+                    <p class="info">The page you were looking for couldn't be found. The page could be removed or you misspelled the word while searching for it. Maybe try a search?</p>
+                </div>
+            </div>
+            <div class="row">
+                <form class="search-container1"> 
+                    <input type="text" placeholder="Search" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+            </div>
+            <div class="row">
+                <button class="btn">Back to Home</button>
+            </div>
+        </div>
+            <div class="row">
+            <div class="bar-social-share social"> 
+                <a class="linkedin" href=""><i class="fa fa-linkedin"></i></a>
+                <a class="facebook" href=""><i class="fa fa-facebook"></i></a>
+                  </div>
+             </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
